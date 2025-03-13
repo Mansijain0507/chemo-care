@@ -15,10 +15,6 @@ app.use(cors());
 // Routes
 app.use("/api/auth", authRouter);
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
 // Start server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
